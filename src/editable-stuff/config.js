@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Stefano",
   middleName: "",
   lastName: "Biasutti",
-  message: "Back end developer",
+  message: "Senior developer, Architect, mentor, crypto enthusiast",
   icons: [
     {
       image: "fa-github",
@@ -43,7 +43,7 @@ const about = {
   imageSize: 375,
   message:
     "My name is Stefano Biasutti... TODO",
-  resume: "resume.pdf",
+  resume: "https://www.dropbox.com/scl/fi/6qa4wqd7lqe5lyfa4l9uc/CV-Stefano-Biasutti.pdf?rlkey=9455kecj8ohktpgfqy3bbno8e&dl=0",
 };
 
 // PROJECTS SECTION
@@ -88,14 +88,30 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
+    { name: "Java", value: 90 },
     { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "Objective-C", value: 85 },
+    { name: "Swift", value: 75 },
+    { name: "C#", value: 75 },
+    { name: "Ruby", value: 55 },
+    { name: "ReactJS", value: 40 },
+    { name: "HTML/CSS", value: 40 },
+    { name: "Python", value: 45 },
+    { name: "Rust", value: 45 },
+  ],
+  technologies: [
+    { name: "Azure", value: 75 },
+    { name: "ElasticSearch", value: 80 },
+    { name: "PostgreSQL", value: 80 },
+    { name: "Docker", value: 70 },
+    { name: "Hazelcast Jet", value: 70 },
+    { name: "Spring", value: 65 },
+    { name: "fastlane", value: 60 },
+    { name: "QGIS", value: 50 },
+    { name: "MSGraph", value: 70 },
+    { name: "OData", value: 50 },
+    { name: "OpenID Connect", value: 80 },
+    { name: "SAML", value: 60 }
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -114,7 +130,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    "Feel free to email me at",
   email: "stefano.biasu@gmail.com",
 };
 
@@ -123,14 +139,28 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Software Engineer II',// Here Add Company Name
+      companylogo: require('../assets/img/Microsoft.webp'),
+      description: "Handling federation space in Microsoft authentication (identity) team, covering the full stack of federated authentication service through several protocols. Among the most relevant, OIDC and SAML. Also, MSGraph reviewer and mentor for the team.",
+      date: 'July 2022 – Present',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Senior Software Developer / Architect',
+      companylogo: require('../assets/img/investcloud.jpg'),
+      description: "iOS framework products for customer iOS applications and Java frameworks for Java back-end applications. Finance sector",
+      date: 'July 2016 – July 2022',
+    },
+    {
+      role: 'Senior Software Developer',
+      companylogo: require('../assets/img/lynx.jpg'),
+      description: "Java and iOS Software Developer. Multiple iOS, Android, and Java (back-end) applications created and maintained",
+      date: 'May 2015 – July 2016',
+    },
+    {
+      role: 'Software Developer',
+      companylogo: require('../assets/img/sysdata.jpeg'),
+      description: "Java and iOS Software Developer. Multiple iOS and Java applications created and maintained",
+      date: 'May 2010 – May 2015',
     },
   ]
 }
