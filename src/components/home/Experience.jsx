@@ -5,12 +5,21 @@ import {
   Container,
   Row,
 } from "react-bootstrap";
+import { useScrollPosition } from "../../hooks/useScrollPosition";
 
-const Experience = ({ experiences }) => {
+const Experience = React.forwardRef(({ experiences }) => {
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      if (!isScrolled && currPos.y - 400 < 0) setIsScrolled(true);
+    },
+    []
+    );
   return (
     <section className="section">
       <Container>
-        <Jumbotron className="bg-white">
+        <Jumbotron id="experiences" className="bg-white">
           <h2 className="display-4 mb-5 text-center">
             {experiences.heading}
           </h2>
@@ -25,6 +34,6 @@ const Experience = ({ experiences }) => {
       </Container>
     </section>
   );
-}
+});
 
 export default Experience;
